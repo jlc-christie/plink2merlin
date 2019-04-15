@@ -5,7 +5,7 @@ This script still needs work, feel free to submit pull requests. There is a func
 
 ## Usage:
 
-```bash
+```
 plink2merlin.py -h
 usage: plink2merlin.py [-h] [--bed BED] [--ped PED] [--vcf VCF]
                        [--plink-binary PLINK_BINARY]
