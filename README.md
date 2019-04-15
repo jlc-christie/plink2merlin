@@ -59,7 +59,8 @@ Output will be saved in to a created `merlin_input_files` directory, named by ch
     5. Get genotype/variant information
         1. Prune SNP data using plink so that 1.) SNPs aren't in LD, and 2.) uncommon variants aren't included 
         2. Create plink `.ped`/`.map` files from binary, including only pruned SNPs
-        3. extract genotype data from `.ped` and variant data from `.map`
-        4. Create dict mapping from fid+iid as key and genotype data as value
+        3. Extract genotype data from `.ped` and variant data from `.map`
+        4. Remove one of the variants which map to the same position on the chromosome in cM (merliin throws exception otherwise)
+        5. Create dict mapping from fid+iid as key and genotype data as value
     6. Using all information gathered, parse data in to QTDT records, create directory for ouput and save `.ped`, `.map` & `.dat` to file
 3. Delete temporary files and cleanup
