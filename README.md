@@ -3,6 +3,8 @@ A simple command line utility written in Python to convert from plink format to 
 
 This script still needs work, feel free to submit pull requests. There is a function call that has been commented out in the script which filters families with >1 offspring, this was used to extract only families with valid sib-pairs, if this is useful and are comfortable editing scripts, just uncomment the line in the `process_chrom` function.
 
+__Note__: Due to changes in how files are recoded in plink2, this only works with plink binaries < version 2
+
 ## Usage:
 
 ```
